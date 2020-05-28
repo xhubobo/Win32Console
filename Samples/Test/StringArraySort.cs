@@ -27,7 +27,6 @@ namespace Samples.Test
 
             var resultList = Win32CommandHelper.ExecuteCommand(exeFileName,
                 "string-array-sort", jArray.ToString());
-            resultList.RemoveAt(0);
             var result = string.Join(Environment.NewLine, resultList);
             var list = new List<string>();
 

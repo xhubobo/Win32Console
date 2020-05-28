@@ -33,7 +33,7 @@ namespace Samples
             process.StandardInput.AutoFlush = true;
 
             //获取cmd输出信息
-            
+
             while (!process.StandardOutput.EndOfStream)
             {
                 lines.Add(process.StandardOutput.ReadLine());
@@ -42,7 +42,12 @@ namespace Samples
             //等待程序执行完毕退出
             process.WaitForExit();
             process.Close();
-            
+
+            if (lines.Count > 0)
+            {
+                lines.RemoveAt(0);
+            }
+
             return lines;
         }
     }
