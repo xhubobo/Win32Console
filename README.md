@@ -1,2 +1,2 @@
 # Win32Console
-This project shows how to invoke methods in win32 console application using C# language.
+该项目展示了如何使用C#调用控制台程序接口的方法，该过程同步调用，C++调用方法类似。
